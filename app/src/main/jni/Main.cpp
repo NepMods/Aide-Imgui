@@ -20,6 +20,14 @@
 
 #include "Includes/Macros.h"
 
+struct MPatches {
+  
+} hexPatches;
+struct Variables {
+ bool example = false;
+} NM;
+
+
 
 #include <EGL/egl.h>
 #include <GLES2/gl2.h>

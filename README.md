@@ -203,7 +203,7 @@ Tеlеgram: @layout_musk
 </details>
 
 Tutorials:
-Coming Soon
+Part 1: https://youtu.be/z14FbmLw_HE
 
 
 # Credits/Acknowledgements

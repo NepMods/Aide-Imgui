@@ -2,7 +2,7 @@
 
 
 **This Is An Imgui Source Convertd For Aide Users, And Based On Dear Imgui. The Real Base Was Created By Spring Musk**
-/n
+
 
 **This won't cover how to mod games in general, hooking functions, etc that every other online tutorial already covers. This template simply tells you how to use them**
 

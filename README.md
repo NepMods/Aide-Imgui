@@ -11,8 +11,7 @@
 Imgui mod menu for il2cpp and other native android games, and some codes used from [Octowolve](https://github.com/Octowolve/Hooking-Template-With-Mod-Menu). KittyMemory, MSHook, And64InlineHook and AY Obfuscator included. 
 Support Android 4.4.x up to Android S Preview. ARMv7, x86 and ARM64 architecture supported. However x86 is deprecated for Unity games so x86 is not our priority
 
-Preview:
-
+Preview: 
 
 # Prerequisites
 Before we can jump head first into working a template, we need to go over a few things.
@@ -28,12 +27,11 @@ Before we can jump head first into working a template, we need to go over a few 
 * An inquisitive mind
 
 # What you need
-* Android Studio 4 and up: https://developer.android.com/studio
-* NDK Installed via Android Studio (Cmake is not needed) https://developer.android.com/studio/projects/install-ndk#default-version
-* Apktool: [Apktool.jar](https://ibotpeaches.github.io/Apktool/) or any 3rd party tools
-* [APK Easy Tool](https://forum.xda-developers.com/android/software-hacking/tool-apk-easy-tool-v1-02-windows-gui-t3333960). To get main activity: 
-* Any text editor. We use [Notepad++](https://notepad-plus-plus.org/downloads/)
+* Aide Cmods Or Others 
+* NDK Installed In Aide
+* A Small Game
 
+Then Done
 # Installation
 Download this repo as ZIP, or clone using any git tools
 
@@ -203,6 +201,10 @@ Tеlеgram: @layout_musk
 
 
 </details>
+
+Tutorials:
+Coming Soon
+
 
 # Credits/Acknowledgements
 Thanks to the following individuals whose code helped me develop this mod menu

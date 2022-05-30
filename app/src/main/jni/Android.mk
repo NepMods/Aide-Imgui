@@ -2,8 +2,9 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libdobby
-LOCAL_SRC_FILES := $(LOCAL_PATH)/libraries/$(TARGET_ARCH_ABI)/libdobby.a
-#for aide users do this LOCAL_SRC_FILES := libraries/$(TARGET_ARCH_ABI)/libdobby.a
+LOCAL_SRC_FILES := libraries/$(TARGET_ARCH_ABI)/libdobby.a
+#For Non-Aide Users: LOCAL_SRC_FILES := $(LOCAL_PATH)/libraries/$(TARGET_ARCH_ABI)/libdobby.a
+
 include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)

@@ -8,7 +8,7 @@
 #include <string>
 #include <cstdlib>
 #include "Logger.h"
-
+const char* libName = "libil2cpp.so";
 typedef unsigned long DWORD;
 static uintptr_t libBase;
 
@@ -51,6 +51,12 @@ DWORD getAbsoluteAddress(const char *libraryName, DWORD relativeAddr) {
     return (reinterpret_cast<DWORD>(libBase + relativeAddr));
 }
 
+DWORD getRealOffset(DWORD address) {
+    if (libBase == 0) {
+        libBase = get_libBase(libName);
+    }
+    return (libBase + address);
+}
 
 jboolean isGameLibLoaded(JNIEnv *env, jobject thiz) {
     return libLoaded;

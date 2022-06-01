@@ -204,6 +204,7 @@ Tеlеgram: @layout_musk
 
 Tutorials:
 Part 1: https://youtu.be/z14FbmLw_HE
+
 Part 2: https://youtu.be/iGIA91lczzU
 
 # Credits/Acknowledgements

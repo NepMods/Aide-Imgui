@@ -27,10 +27,11 @@ LOCAL_STATIC_LIBRARIES := libdobby
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/ImGui
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/ImGui/backends
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/Includes
 
 # Here you add the cpp file to compile
-LOCAL_SRC_FILES := Main.cpp \
-	Substrate/hde64.c \
+LOCAL_SRC_FILES := Substrate/hde64.c \
+	Includes/Loader.cpp \
 	Substrate/SubstrateDebug.cpp \
 	Substrate/SubstrateHook.cpp \
 	Substrate/SubstratePosixMemory.cpp \

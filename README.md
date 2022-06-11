@@ -1,17 +1,13 @@
 Unity Imgui 
 
-Change log:
+**Change log:**
+
 ```
-<br>
-Fixed for Aide
-<br>
-Added ByNameModding library
-<br>
-Touch Fixed [ Need One Offset ]
-<br>
-Made Code Cleaner 
-<br>
-Made Easy 
+-> Fixed for Aide
+-> Added ByNameModding library
+-> Touch Fixed [ Need One Offset ]
+-> Made Code Cleaner 
+-> Made Easy 
 ```
 **Still Not For Newbies**
 

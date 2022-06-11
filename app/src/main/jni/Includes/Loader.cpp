@@ -16,7 +16,7 @@
 #include "Includes/Utils.h"
 #include "KittyMemory/MemoryPatch.h"
 #include "includes/Dobby/dobby.h"
-#define targetLibName OBFUSCATE("libil2cpp.so")
+
 #include "Includes/Macros.h"
 #include "Color.h"
 #include "imgui.h"

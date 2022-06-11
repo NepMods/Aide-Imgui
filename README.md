@@ -1,7 +1,7 @@
 Unity Imgui 
-
+*
 **Change log:**
-
+*
 ```
 -> Fixed for Aide
 -> Added ByNameModding library
@@ -11,7 +11,41 @@ Unity Imgui
 ```
 **Still Not For Newbies**
 
-https://github.com/NepMods/Aide-Imgui
+**Invoke Code**
+```
+
+    const-string v0, "MyLibName"
+
+    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+```
+
+**Start A Window**
+```
+   ImGui::Begin("Window Name", bool_isActive, ImGuiWindowFlags);
+   ImGui::End();
+   
+   Example:
+   
+   ImGui::Begin("Test Windoe, nullptr);
+   ImGui::End();
+   
+```
+
+**Add A Widget**
+
+```
+   bool GodMod = false;
+   ImGui::Checkbox("My Checkbox", &GodMod);
+   
+   if(ImGui::Button("My Button")) {
+       GodMod = !GodMode;
+   }
+```
+
+**More**
+<br>
+For More, Check the <a href="https://github.com/NepMods/Aide-Imgui/blob/master/app/src/main/jni/ImGui/imgui_demo.cpp">ImGui_Demo</a>
+<br>https://github.com/NepMods/Aide-Imgui
 
 join For Help:
 https://t.me/CheaterNeverDies

@@ -1,7 +1,8 @@
 Unity Imgui 
-*
+<br>
+
 **Change log:**
-*
+
 ```
 -> Fixed for Aide
 -> Added ByNameModding library
@@ -44,8 +45,9 @@ Unity Imgui
 
 **More**
 <br>
+
 For More, Check the <a href="https://github.com/NepMods/Aide-Imgui/blob/master/app/src/main/jni/ImGui/imgui_demo.cpp">ImGui_Demo</a>
-<br>https://github.com/NepMods/Aide-Imgui
+<br><br>https://github.com/NepMods/Aide-Imgui
 
 join For Help:
 https://t.me/CheaterNeverDies

@@ -9,6 +9,7 @@ Unity Imgui
 -> Touch Fixed [ Need One Offset ]
 -> Made Code Cleaner 
 -> Made Easy 
+-> I Wont Work On This Anymore
 ```
 **Still Not For Newbies**
 

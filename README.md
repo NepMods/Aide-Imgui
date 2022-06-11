@@ -2,9 +2,10 @@ Unity Imgui
 
 
 Change log:
-1.Fixed for Aide
-2. Added ByNameModding library
-3. Touch Fixed [ Need One Offset ]
-4. Made Code Cleaner
-5. Made Easy 
-1. Fixed For Aide
+Fixed for Aide
+Added ByNameModding library
+Touch Fixed [ Need One Offset ]
+Made Code Cleaner 
+Made Easy 
+
+**Still Not For Newbies**

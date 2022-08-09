@@ -8,10 +8,10 @@
 #include <string>
 #include <cstdlib>
 #include "Logger.h"
-const char* libName = "libil2cpp.so";
+#include "Unity/unity.h"
 typedef unsigned long DWORD;
 static uintptr_t libBase;
-
+const char* libName = "libil2cpp.so";
 bool libLoaded = false;
 
 DWORD findLibrary(const char *library) {
@@ -51,12 +51,6 @@ DWORD getAbsoluteAddress(const char *libraryName, DWORD relativeAddr) {
     return (reinterpret_cast<DWORD>(libBase + relativeAddr));
 }
 
-DWORD getRealOffset(DWORD address) {
-    if (libBase == 0) {
-        libBase = findLibrary(libName);
-    }
-    return (libBase + address);
-}
 
 jboolean isGameLibLoaded(JNIEnv *env, jobject thiz) {
     return libLoaded;
@@ -78,6 +72,12 @@ bool isLibraryLoaded(const char *libraryName) {
     }
     return false;
 }
+DWORD getRealOffset(DWORD address) {
+    if (libBase == 0) {
+        libBase = findLibrary(libName);
+    }
+    return (libBase + address);
+}
 
 uintptr_t string2Offset(const char *c) {
     int base = 16;
@@ -96,10 +96,6 @@ uintptr_t string2Offset(const char *c) {
 
     // All other options exhausted, sizeof(uintptr_t) == sizeof(unsigned long long))
     return strtoull(c, nullptr, base);
-}
-
-const char *offset2String(uintptr_t offset) {
-    return reinterpret_cast<const char *>(offset);
 }
 
 namespace ToastLength {

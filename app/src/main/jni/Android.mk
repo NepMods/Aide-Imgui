@@ -12,7 +12,7 @@ include $(CLEAR_VARS)
 # Here is the name of your lib.
 # When you change the lib name, change also on System.loadLibrary("") under OnCreate method on StaticActivity.java
 # Both must have same name
-LOCAL_MODULE    := MyLibName
+LOCAL_MODULE    := nepGUI
 
 # -std=c++17 is required to support AIDE app with NDK
 LOCAL_CFLAGS := -w -s -Wno-error=format-security -fvisibility=hidden -fpermissive -fexceptions
@@ -27,26 +27,26 @@ LOCAL_STATIC_LIBRARIES := libdobby
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/ImGui
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/ImGui/backends
-LOCAL_C_INCLUDES += $(LOCAL_PATH)/Includes
 
 # Here you add the cpp file to compile
-LOCAL_SRC_FILES := Substrate/hde64.c \
-	Includes/Loader.cpp \
-	Substrate/SubstrateDebug.cpp \
-	Substrate/SubstrateHook.cpp \
-	Substrate/SubstratePosixMemory.cpp \
-	Substrate/SymbolFinder.cpp \
-	KittyMemory/KittyMemory.cpp \
-	KittyMemory/MemoryPatch.cpp \
+LOCAL_SRC_FILES := Main.cpp \
+    Substrate/hde64.c \
+    Substrate/SubstrateDebug.cpp \
+    Substrate/SubstrateHook.cpp \
+    Substrate/SubstratePosixMemory.cpp \
+    Substrate/SymbolFinder.cpp \
+    KittyMemory/KittyMemory.cpp \
+    KittyMemory/MemoryPatch.cpp \
     KittyMemory/MemoryBackup.cpp \
     KittyMemory/KittyUtils.cpp \
-	And64InlineHook/And64InlineHook.cpp \
-	ImGui/imgui.cpp \
-	ImGui/imgui_draw.cpp \
+    And64InlineHook/And64InlineHook.cpp \
+    ImGui/imgui.cpp \
+    ImGui/imgui_draw.cpp \
     ImGui/imgui_demo.cpp \
-	ByNameModding/BNM.cpp \
-	ImGui/imgui_widgets.cpp \
-	ImGui/imgui_tables.cpp \
-	ImGui/backends/imgui_impl_opengl3.cpp \
+    ImGui/imgui_widgets.cpp \
+    ImGui/imgui_tables.cpp \
+    ImGui/backends/imgui_impl_opengl3.cpp \
+    ImGui/backends/imgui_impl_android.cpp \
+    ByNameModding/BNM.cpp \
 
 include $(BUILD_SHARED_LIBRARY)

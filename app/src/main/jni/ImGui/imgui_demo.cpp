@@ -406,11 +406,8 @@ void ImGui::ShowDemoWindow(bool* p_open)
         ImGui::EndMenuBar();
     }
 
-    ImGui::Text("dear imgui says hello. (%s)", IMGUI_VERSION);
-    ImGui::Spacing();
-
-    IMGUI_DEMO_MARKER("Help");
-    if (ImGui::CollapsingHeader("Help"))
+    
+    if (ImGui::CollapsingHeader("Player Settings"))
     {
         ImGui::Text("ABOUT THIS DEMO:");
         ImGui::BulletText("Sections below are demonstrating many aspects of the library.");
@@ -6585,7 +6582,7 @@ struct ExampleAppConsole
         // If you only want raw text you can use ImGui::TextUnformatted(log.begin(), log.end());
         // NB- if you have thousands of entries this approach may be too inefficient and may require user-side clipping
         // to only process visible items. The clipper will automatically measure the height of your first item and then
-        // "seek" to display only items in the visible area.
+        // "e" to display only items in the visible area.
         // To use the clipper we can replace your standard loop:
         //      for (int i = 0; i < Items.Size; i++)
         //   With:
